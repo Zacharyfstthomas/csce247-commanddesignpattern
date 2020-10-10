@@ -7,9 +7,15 @@ public class Agent {
 	
 	private ArrayList<Command> orders;
 	
-	public Agent() {}
+	public Agent() {
+		
+		orders = new ArrayList<Command>();
+	}
 	
-	public void placeOrder(Command command) {}
+	public void placeOrder(Command command) {
+			command.execute(); // temporary maybe not permanent
+		
+	}
 	
 	public void processOrders() {}
 	
