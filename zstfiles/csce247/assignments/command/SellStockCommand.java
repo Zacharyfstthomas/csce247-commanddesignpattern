@@ -8,9 +8,9 @@ public class SellStockCommand implements Command {
 	
 	
 	public SellStockCommand(StockTrade stockTrade, String stockName, int shares){
-		
-		
-		
+		this.stockTrade = stockTrade;
+		this.stockName = stockName;
+		this.shares = shares;
 	}
 	
 
