@@ -13,11 +13,14 @@ public class Agent {
 	}
 	
 	public void placeOrder(Command command) {
-			command.execute(); // temporary maybe not permanent
-		
+		orders.add(command);
 	}
 	
-	public void processOrders() {}
+	public void processOrders() {
+		for(Command order : orders) {
+			order.execute();
+		}
+	}
 	
 	
 }
