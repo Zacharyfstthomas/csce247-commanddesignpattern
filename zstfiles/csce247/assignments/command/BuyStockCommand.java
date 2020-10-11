@@ -16,6 +16,9 @@ public class BuyStockCommand implements Command {
 
 	public void execute() {
 	
+		
+		stockTrade.buy(stockName, shares);
+		
 	}
 	
 }

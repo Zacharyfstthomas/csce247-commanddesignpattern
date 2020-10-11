@@ -16,6 +16,8 @@ public class SellStockCommand implements Command {
 
 	public void execute() {
 	
+		
+		stockTrade.sell(stockName, shares);
 	}
 	
 	
